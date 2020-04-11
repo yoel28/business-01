@@ -1,0 +1,9 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /business/v1
+springdoc:
+  swagger-ui:
+    path: "${server.servlet.context-path}/swagger/swagger.html"
+  api-docs:
+    path: "${server.servlet.context-path}/swagger/swagger.json"
